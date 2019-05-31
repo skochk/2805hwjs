@@ -1,0 +1,68 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.grid_area {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+      grid-template-areas: "sq sq r1 sq1 sq1" "sq2 sq2 r1 sq2 sq2" "r2 r2 r2 r2 r2 r2" "s3 sq3 r1 sq3 sq3" "sq4 sq4 r1 sq4 sq4";
+}
+
+.square1, .square2, .square3, .square4 {
+  background-color: lightgreen;
+}
+
+.road_vertiacal {
+  background-color: black;
+}
+
+.lighter1 {
+  float: right;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: red;
+}
+
+.lighter3 {
+  float: right;
+  height: 50px;
+  width: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: green;
+}
+
+.lighter2 {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: green;
+}
+
+.lighter4 {
+  float: left;
+  height: 50px;
+  width: 50px;
+  margin-left: 20px;
+  margin-top: 20px;
+  background-color: red;
+}
+
+body {
+  margin: 0 auto;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+}
+/*# sourceMappingURL=style.css.map */
